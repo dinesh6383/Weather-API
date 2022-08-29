@@ -95,7 +95,7 @@ const api = (userCity) => {
           riseSet(response.city.sunrise, response.city.sunset);
         }
 
-        if (nowTime === recentTime) {
+        if (nowTime >= recentTime && nowTime <= recentTime + 3) {
           const days = new Date(day.dt * 1000);
           const weekday = days.getDay();
 
