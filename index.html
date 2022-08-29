@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body id="body">
+    <div id="container">
+        <header>
+            <input id="input-box" type="text" autocomplete="off" placeholder="Search for a city..">
+            <i class="fas fa-search search-icon"></i>
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">-------, --</div>
+                <div class="date">------, -- ---- ----</div>
+            </section>
+            <div class="current">
+                <div class="temp">-- <span>°</span></div>
+                <div class="weather">-----</div>
+            </div>
+            <div class="extras">
+                <div class="min-max-temp">
+                    <div class="max">
+                        <h3>Max temp</h3>
+                        <h4 class="max-num">--°</h4>
+                    </div>
+                    <div class="min">
+                        <h3>Min temp</h3>
+                        <h4 class="min-num">--°</h4>
+                    </div>
+                    
+                </div>
+                <div class="wind-pressure-humidity">
+                    <div class="wind">
+                        <h3>Wind</h3>
+                        <h4 class="wind-speed">--</h4>
+                    </div>
+                    <div class="pressure">
+                        <h3>Pressure</h3>
+                        <h4 class="pressure-rate">--</h4>
+                    </div>
+                    <div class="humidity">
+                        <h3>Humidity</h3>
+                        <h4 class="humidity-level">--</h4>
+                    </div>
+                </div>
+                <div class="sunrise-sunset ">
+                    <div class="sunrise">
+                        <h3>Sunrise</h3>
+                        <h4 class="sunrise-time">--:--</h4>
+                    </div>
+                    <div class="sunset">
+                        <h3>Sunset</h3>
+                        <h4 class="sunset-time">--:--</h4>
+                    </div>
+                </div>
+                <div class="weekly-forecast">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
